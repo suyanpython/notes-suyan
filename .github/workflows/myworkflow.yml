@@ -4,7 +4,7 @@ jobs:
   ubuntu:
     runs-on: ubuntu-latest
     steps:
-      -run: date
+      - run: date
   windows:
     runs-on: windows-latest
     steps:
@@ -18,4 +18,3 @@ jobs:
     needs: [ubuntu, windows, macos]
     steps:
       - run: date
-
