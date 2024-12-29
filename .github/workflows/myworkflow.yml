@@ -1,0 +1,21 @@
+name: myworkflow
+on: push
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      -run: date
+  windows:
+    runs-on: windows-latest
+    steps:
+      -run: date
+  macos:
+    runs-on: macos-latest
+    steps:
+      -run: date
+  job-depends:
+    runs-on: ubuntu-latest
+    needs: [ubuntu, windows, macos]
+    steps:
+      -run: date
+
