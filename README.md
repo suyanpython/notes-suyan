@@ -1,3 +1,6 @@
+Please don't hesitate to put a star in this project
+
+
 
 # Git questions :
 https://github.com/suyanpython/git-notes-suyan/wiki/Git-questions
