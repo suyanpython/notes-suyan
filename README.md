@@ -7,6 +7,8 @@
 # Git questions :
 https://github.com/suyanpython/git-notes-suyan/wiki/Git-questions
 
+# Github actions:
+https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows
 
 # Git UI tools :
 
