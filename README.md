@@ -1,4 +1,6 @@
-Please don't hesitate to put a star in this project
+-Please don't hesitate to put a star in this project, 
+
+-Thank you for the support ! 
 
 
 
