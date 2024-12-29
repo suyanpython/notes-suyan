@@ -1,0 +1,94 @@
+{
+    "questions": [
+      {
+        "question": "Les syntaxes suivante désigne le contenu de la variable voiture :",
+        "answer-1": "#voiture ou !voiture",
+        "answer-2": "$voiture  ou ${voiture}",
+        "answer-3": "voiture[] ou voiture[1]",
+        "answer-4": "[voiture] ou $voiture",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Parlant de caractères de protection, que signifie les back quotes : AltGr + touche 7 (``) ?",
+        "answer-1": "Aucune variable ne se trouve dans les back quotes",
+        "answer-2": "Interprète les caractère spéciaux",
+        "answer-3": "N'interprète pas les caractères spéciaux",
+        "answer-4": "Exécute se qui se trouve à l'intérieur des back quotes",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Quelle commande permets de saisir la valeur d'une variable au clavier ? ",
+        "answer-1": "pwd",
+        "answer-2": "cat",
+        "answer-3": "read",
+        "answer-4": "echo",
+        "duration": "20",
+        "good-answer": "3"
+      },
+      {
+        "question": "Que représente les variables suivantes  ? : $1, $2, $4 ...$9, $*, $#, $?, $$",
+        "answer-1": "Variables prédéfinies automatiquement au run d'un script",
+        "answer-2": "Variables prédéfinies de l'utilisateur courant",
+        "answer-3": "Variables permettant de séquencer les job d'un script",
+        "answer-4": "Variable interne du Kernel, servant à l'ordonnancement",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Les commandes suivant me permettend de faire des opérations arythmétiques sur des variables :",
+        "answer-1": "let et shift",
+        "answer-2": "let ou bc",
+        "answer-3": "shift et cal",
+        "answer-4": "awk et sed",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Que fait la déclaration suivante : Continents=('Afrique' 'Asie' 'Europe' 'Amérique' 'Oceanie')",
+        "answer-1": "Creation d'un variable d'environnement nommée Continents",
+        "answer-2": "Creation de 5 variable simples nommées Afrique, Asie etc...",
+        "answer-3": "Creation d'un hash d'un élément, dont la clé est Continents",
+        "answer-4": "Creation d'un tableau de 5 éléments",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Comment faire pour afficher tout le contenu du tableau Continents ?",
+        "answer-1": "echo ${Continents[*]}",
+        "answer-2": "echo ${Continents[0]}",
+        "answer-3": "echo [*]Continents",
+        "answer-4": "echo Continents[]",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Comment faire pour afficher le contenu de l'élément en position 5 du tableau Continents?",
+        "answer-1": "echo Continents[5]",
+        "answer-2": "echo ${Continents[4]}",
+        "answer-3": "echo {Continents[4]}",
+        "answer-4": "echo ${Continents[]4}",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "En shell, les indices d'un tableau commencent par quel numéro ?",
+        "answer-1": "2",
+        "answer-2": "1",
+        "answer-3": "-1",
+        "answer-4": "0",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Que fait la commande shift ?",
+        "answer-1": "Supprime une variable en commencant pas $1",
+        "answer-2": "Rajoute une nouvelle variable à partir de $10",
+        "answer-3": "Décale les var $1, $2,...$9 car $10 et plus n'existent pas",
+        "answer-4": "Supprime une variable en commencant pas $9",
+        "duration": "20",
+        "good-answer": "3"
+      }
+    ]
+  }

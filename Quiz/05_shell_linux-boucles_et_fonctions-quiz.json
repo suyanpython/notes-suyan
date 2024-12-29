@@ -1,0 +1,121 @@
+{
+    "questions": [
+      {
+        "question": "Quelles structures de boucles aborde-t-on en cours ?",
+        "answer-1": "when, if et while",
+        "answer-2": "while, until et for",
+        "answer-3": "case, until et for",
+        "answer-4": "for, foreach et with_items",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Quand est ce qu'une boucle while s'arrête ?",
+        "answer-1": "Lorsque le test s'incrémente",
+        "answer-2": "Lorsqu'il n'existe aucune condition de sortie",
+        "answer-3": "Lorsque la condition de test devient vrai",
+        "answer-4": "Lorsque la condition de test devient fausse",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Quand est ce qu'une boucle until s'arrête ?",
+        "answer-1": "Lorsque le test s'incrémente",
+        "answer-2": "Lorsqu'il n'existe aucune condition de sortie",
+        "answer-3": "Lorsque la condition de test devient vrai",
+        "answer-4": "Lorsque la condition de test devient fausse",
+        "duration": "20",
+        "good-answer": "3"
+      },
+      {
+        "question": "Dans quelle situation la boucle for est conseillée ?",
+        "answer-1": "Lorsqu'on maîtrise le nombre d'itérations",
+        "answer-2": "Lorsqu'on ne maîtrise pas le nombre d'itérations",
+        "answer-3": "Lorsqu'on manipule des nombres",
+        "answer-4": "Lorsqu'on manipule des fichiers",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Sur quels éléments la boucle for de la capture s'incrémente ?",
+        "answer-1": "La liste des utilisateur du système",
+        "answer-2": "La liste des fichiers du répertoire courant",
+        "answer-3": "De la lettre l à la letre s de l'alphabet",
+        "answer-4": "De la lettre s à la letre l de l'alphabet, car '$' devant",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Le programme suivant est une boucle infinie, seul le kill du processus pourra l'arrêter !",
+        "answer-1": "Faux, il suffit de saisir FALSE et il se STOP",
+        "answer-2": "Vrai, seul un signal Sigterm peut le stopper",
+        "answer-3": "Faux, il suffit de saisir la lettre Q, et il se  STOP",
+        "answer-4": "Faux, il suffit de saisir la lettre q, et il se  STOP",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Que signifie i++ dans la capture ?",
+        "answer-1": "i=i+1",
+        "answer-2": "i=i-1",
+        "answer-3": "i=i+i",
+        "answer-4": "i=$i+$i",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Quel est l'itérateur dans la capture suivante ?",
+        "answer-1": "La variable cachée 'i' ",
+        "answer-2": "La variable 'valeur' ",
+        "answer-3": "La variable 'e' ",
+        "answer-4": "la variable 'in' ",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Que représente la capture suivante ?",
+        "answer-1": "La syntaxe d'une boucle until",
+        "answer-2": "La syntaxe d'une boucle for",
+        "answer-3": "La syntaxe d'un test 'tant que'",
+        "answer-4": "La syntaxe d'une boucle while",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Que représente la capture suivante ?",
+        "answer-1": "La syntaxe d'une boucle until",
+        "answer-2": "La syntaxe d'une boucle for",
+        "answer-3": "La syntaxe d'un test 'tant que'",
+        "answer-4": "La syntaxe d'une boucle while",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Dans un script, où déclarer des fonctions ?",
+        "answer-1": "Toujours apres le shebang, c'est obligatoire",
+        "answer-2": "En début de script, ou avant leur utilisation",
+        "answer-3": "Peu importe l'endroit",
+        "answer-4": "Peu importe, pourvu qu'on utilise avant de déclarer",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Combien de syntaxe vue en cours pour écrire des fonctions shell ?",
+        "answer-1": "3",
+        "answer-2": "4",
+        "answer-3": "2",
+        "answer-4": "1",
+        "duration": "20",
+        "good-answer": "3"
+      },
+      {
+        "question": "Que représente la capture suivante ?",
+        "answer-1": "C'est du code python",
+        "answer-2": "Un script groovy, rien à voir avec du shell",
+        "answer-3": "Syntaxe d'importation d'un autre script shell",
+        "answer-4": "Syntaxe de définition d'un fonction",
+        "duration": "20",
+        "good-answer": "4"
+      }      
+    ]
+  }

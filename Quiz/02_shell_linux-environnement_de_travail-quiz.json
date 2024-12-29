@@ -1,0 +1,94 @@
+{
+    "questions": [
+      {
+        "question": "Quel autre nom donne - t - on aux variables d'environnement ?",
+        "answer-1": "Les variables utilisateurs",
+        "answer-2": "Les variables globales",
+        "answer-3": "Les sémaphores",
+        "answer-4": "Les fichiers cachés",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Quelle commande permet de visualiser les variables d'environnement ?",
+        "answer-1": "echo $ENV",
+        "answer-2": "who",
+        "answer-3": "date",
+        "answer-4": "env",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Que représente la variable d'environnement PS1",
+        "answer-1": "Le shell système utilisé",
+        "answer-2": "Le prompt secondaire",
+        "answer-3": "Le prompt principal",
+        "answer-4": "Le premier processus lancé par le système",
+        "duration": "20",
+        "good-answer": "3"
+      },
+      {
+        "question": "La commande suivante permet d'exporter la variable d'env HTTP_PROXY",
+        "answer-1": "export HTTP_PROXY",
+        "answer-2": "export $HTTP_PROXY",
+        "answer-3": "import HTTP_PROXY",
+        "answer-4": "import $HTTP_PROXY",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Quelle commandes permet de lister les options configurée du shell ?",
+        "answer-1": "env",
+        "answer-2": "set",
+        "answer-3": "lsof",
+        "answer-4": "lsoption",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Qu'est ce qu'un alias en shell ?",
+        "answer-1": "Un raccourci sur une variable d'environnement",
+        "answer-2": "Un script shell développé avec le shell 'alias'",
+        "answer-3": "Un binaire exécutable",
+        "answer-4": "Un raccourci sur une commande",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Quelle commande permet de supprimer des alias ?",
+        "answer-1": "unalias",
+        "answer-2": "aliase",
+        "answer-3": "ln",
+        "answer-4": "rm",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Dans un shell bash, quel fichier stocke l'historique des commandes de l'utilisateur ?",
+        "answer-1": "~/home/.bash_history",
+        "answer-2": "~/.bash_history",
+        "answer-3": "~/bash_history",
+        "answer-4": "~/.history",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Quelle est l'utilité des fichiers d'environnement ?",
+        "answer-1": "Stocker les crédentials du user",
+        "answer-2": "Stocker les variables d'env uniquement",
+        "answer-3": "Stocker les chemin vers les scripts shell",
+        "answer-4": "Stocker permanemment le paramétrage de l'env du user",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Après édition des fichiers d'env, comment se comporter ?",
+        "answer-1": "Rien à faire, ils sont pris en compte à chaud",
+        "answer-2": "Restarter le systemd avec 'systemctl restart systemd'",
+        "answer-3": "Recharger les fichiers avec 'source' ou '.', ou se relogger",
+        "answer-4": "Reloader le systemd avec 'systemctl daemon-reload'",
+        "duration": "20",
+        "good-answer": "3"
+      }
+    ]
+  }

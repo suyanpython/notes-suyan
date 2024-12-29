@@ -1,0 +1,112 @@
+{
+    "questions": [
+      {
+        "question": "Que signifie regexp ?",
+        "answer-1": "Reference Google Expression",
+        "answer-2": "Regular Expression, c'est une abbréviation anglaise",
+        "answer-3": "Reference Google Experience",
+        "answer-4": "Return Google Experience",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Qu'est ce qu'une expression régulière ?",
+        "answer-1": "C'est des frameworks shell/Linux",
+        "answer-2": "Méthode d'écriture de fonction shell",
+        "answer-3": "Méthode de calcul mathématique en shell",
+        "answer-4": "Méthode pour décrire une suite de caractère suivant 1 format",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Qu'est ce qui est capturé par la regexp suivante ? : [1-4][0-9]",
+        "answer-1": "Un nombre compris entre 1 et 9",
+        "answer-2": "Un nombre compris entre 1 et 49",
+        "answer-3": "Un nombre compris entre 1 et 4 ou 0 et 9",
+        "answer-4": "Un nombre compris entre 10 et 49",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Qu'est ce qui est capturé par la regexp suivante ? : x(ab){1,3}",
+        "answer-1": "xab, xabab ou xababab",
+        "answer-2": "xa, xaa ou xaaa",
+        "answer-3": "xb, xbb ou xbbb",
+        "answer-4": "xab, xabxab ou xabxabxab",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Qu'est ce que sed ?",
+        "answer-1": "C'est un operateur arythmétique",
+        "answer-2": "Sed = Stream Editor, un éditeur de flux",
+        "answer-3": "C'est une fonction lambda dans Linux",
+        "answer-4": "C'est du function as a service en shell",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Que fait la commande suivante ? sed /prend/d fichier",
+        "answer-1": "Supprimer la ligne débutant par 'prend' dans 'fichier' ",
+        "answer-2": "Supprimer la ligne finissant par 'prend' dans 'fichier' ",
+        "answer-3": "Ajouter la ligne 'prend' dans 'fichier' ",
+        "answer-4": "Supprimer les lignes contenant 'prend' dans 'fichier' ",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Que fait la commande suivante ? sed 3,5d fichier",
+        "answer-1": "Supprimer les lignes 3 à 5 dans 'fichier' ",
+        "answer-2": "Supprimer les lignes 3 et 5 dans 'fichier' ",
+        "answer-3": "Ajouter des lignes en position 3 et 5 dans 'fichier' ",
+        "answer-4": "Supprimer les lignes contenant 3 ou 5 dans 'fichier' ",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Que signifie awk",
+        "answer-1": "All Write Kernel",
+        "answer-2": "Aho Weinberger et Kernigan",
+        "answer-3": "Any Write Kernet",
+        "answer-4": "Anton Weber Korn",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Dans un programme awk, que se passe -t-il si le motif est absent ?",
+        "answer-1": "L'action s'exécute pour la dernière ligne uniquement",
+        "answer-2": "L'action s'exécute pour la premiere ligne uniquement",
+        "answer-3": "L'action ne s'exécute pas ",
+        "answer-4": "L'action s'exécute pour toutes les lignes",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Quelle est la valeur de NR, NF et $NF  pour la ligne numero 1 du texte",
+        "answer-1": "NR=0 , NF=3 et $NF=beau",
+        "answer-2": "NR=0 , NF=2 et $NF=beau",
+        "answer-3": "NR=1 , NF=3 et $NF=beau",
+        "answer-4": "NR=0 , NF=2 et $NF=fait",
+        "duration": "20",
+        "good-answer": "3"
+      },
+      {
+        "question": "Quel est le résultat de la commande suivante ? echo un deux trois | awk '{print $0}'",
+        "answer-1": "un,deux,trois",
+        "answer-2": "un deux trois",
+        "answer-3": "un",
+        "answer-4": "un:deux:trois",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Quel est le résultat de la commande suivante ? echo un deux trois | awk '{print $1,$2,$3}'",
+        "answer-1": "un,deux,trois",
+        "answer-2": "un deux trois",
+        "answer-3": "un",
+        "answer-4": "un:deux:trois",
+        "duration": "20",
+        "good-answer": "2"
+      }      
+    ]
+  }

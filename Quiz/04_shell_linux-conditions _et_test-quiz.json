@@ -1,0 +1,94 @@
+{
+    "questions": [
+      {
+        "question": "On a évoqué deux structures de test en shell, lesquelles ?",
+        "answer-1": "for et while",
+        "answer-2": "if et case",
+        "answer-3": "until et when",
+        "answer-4": "if et until",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Que représente la capture suivante ?",
+        "answer-1": "La syntaxe d'un case",
+        "answer-2": "La syntaxe d'un if simple ",
+        "answer-3": "La syntaxe des boucles imbriquées",
+        "answer-4": "La syntaxe d'un if, version si/sinon si",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Que se passe-t-il si la valeur de ma_variable est différente de valeur_1, valeur_2, valeur_3 ?",
+        "answer-1": "Le script jouera la troisieme commande",
+        "answer-2": "Le script jouera la deuxieme commande",
+        "answer-3": "Le script jouera la commande par défaut (*)",
+        "answer-4": "Le script se plantera",
+        "duration": "20",
+        "good-answer": "3"
+      },
+      {
+        "question": "Quels sont les types de tests possibles en bash ?",
+        "answer-1": "Tests sur les chaînes de caractères",
+        "answer-2": "Tests sur les nombres et chaînes de caractères",
+        "answer-3": "Tests sur les fichiers",
+        "answer-4": "Tests sur les fichiers, nombre et chaînes de caractères",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Que signifie l'opérateur booléeen '&&' ?",
+        "answer-1": "La négation, test si le contraire est OK",
+        "answer-2": "Intersection, OK si les tests de part et d'autre sont OK",
+        "answer-3": "L'union, Ok si l'une des expressions est OK ",
+        "answer-4": "La OU exclusif",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Que signifie le caractère & en shell ?",
+        "answer-1": "Il permets d'afficher le contenu d'une variable",
+        "answer-2": "Il affiche le code retour de la derniere commande",
+        "answer-3": "Il permet de mettre une commande en premier plan",
+        "answer-4": "Il permet de lancer une commande en arrière plan",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Que fait le test de la capture suivante ?",
+        "answer-1": "Test si le premier argument est strictement inferieur à 21",
+        "answer-2": "Test si le premier argument est inferieur à 21",
+        "answer-3": "Test si le premier argument est strictement supérieur à 21",
+        "answer-4": "Test si le premier argument est supérieur à 21",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Quel est le rôle de l'opérateur de test '-r' ?",
+        "answer-1": "Test si le fichier est vide (r, rien)",
+        "answer-2": "Test si le fichier a les droits de lecture (r, read)",
+        "answer-3": "Test si le fichier est reacheable (r)",
+        "answer-4": "Test si l'utilisateur possède un rôle (r)",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Quel operateur permet de vérifer si le fichier est un répertoire ?",
+        "answer-1": "-w pour workdir",
+        "answer-2": "-r pour repositori",
+        "answer-3": "-f pour file",
+        "answer-4": "-d pour directory",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Quelle différence entre les opérateur '=' et '==' pour les chaînes de caractère",
+        "answer-1": "L'un pour tester les voyelles, l'autre les consonnes",
+        "answer-2": "L'un pour tester les majuscule, l'autre les minuscules",
+        "answer-3": "Aucune, ils sont pareils",
+        "answer-4": "L'un permet de tester les mots clés du shell uniquement",
+        "duration": "20",
+        "good-answer": "3"
+      }
+    ]
+  }

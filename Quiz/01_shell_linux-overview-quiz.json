@@ -1,0 +1,94 @@
+{
+    "questions": [
+      {
+        "question": "Qu'est ce que le shell ?",
+        "answer-1": "C'est une entreprise vente de carburant automobile",
+        "answer-2": "Programme de la CLI qui interprete les commandes saisies",
+        "answer-3": "C'est un environnement de développement intégré",
+        "answer-4": "C'est un compilateur offert par le kernerl Linux",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "A quoi peut-on assimiler les différents types de shell disponibles ?",
+        "answer-1": "Aux différents chargeur d'amorcage ",
+        "answer-2": "Aux différentes classes privées en java",
+        "answer-3": "Aux environnements virtuels de python",
+        "answer-4": "Aux différentes GUI (Unity, Gnome, Kde, etc ...)",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Comment s'appelle l'ancêtre de tous les shell ?",
+        "answer-1": "Korn shell (ksh)",
+        "answer-2": "Bourne again shell (Bash)",
+        "answer-3": "Bourne Shell (sh)",
+        "answer-4": "C shell (csh)",
+        "duration": "20",
+        "good-answer": "3"
+      },
+      {
+        "question": "Quelles raisons pousseraient un administrateur à choisir un shell particulier ?",
+        "answer-1": "Compatibilité sur la plupart des OS + facilité d'utilisation",
+        "answer-2": "L'humeur de l'administrateur",
+        "answer-3": "La GUI utilisée et la version du Kernel",
+        "answer-4": "Le type de RAM et le type de partirion (LVM ou standard)",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Quel shell est le plus utilisé par la communauté Linux ?",
+        "answer-1": "Le sh, car disponible sur tous les OS Linux",
+        "answer-2": "Le bash, rend simple l'écriture des scripts comparé au sh",
+        "answer-3": "Le zsh, car plus récent que bash, csh et ksh",
+        "answer-4": "Le csh, car syntaxe du C se rapprochant du matériel",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Comment visualiser le shell utilisé",
+        "answer-1": "Dans le fichier ~/.shells de l'utilisateur",
+        "answer-2": "Dans le fichier /etc/shell",
+        "answer-3": "Dans le fichier /etc/group",
+        "answer-4": "Dans la variable d'environnement SHELL",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "Dans un script shell, comment se nomme la premiere ligne commençant par '#!' ?",
+        "answer-1": "Le shebang",
+        "answer-2": "Le hashtag",
+        "answer-3": "Le tag",
+        "answer-4": "Le Label",
+        "duration": "20",
+        "good-answer": "1"
+      },
+      {
+        "question": "Comment lancer un script shell avec le binaire bash en mode débogage ?",
+        "answer-1": "Il faut mettre les droits d'exécution au script",
+        "answer-2": "Utilisation de l'option '-x' au lancement du script",
+        "answer-3": "Il faut setter le sticky bit au script",
+        "answer-4": "Il faut mettre les droits de lecture + exécution au script",
+        "duration": "20",
+        "good-answer": "2"
+      },
+      {
+        "question": "Comment transformer un script shell en une commande linux ?",
+        "answer-1": "Copier le script dans le répertoire /etc/bin",
+        "answer-2": "Ajouter une option de manuel -h au script",
+        "answer-3": "Rendre le script exécutable",
+        "answer-4": "Rajouter le dossier du script dans la variable PATH",
+        "duration": "20",
+        "good-answer": "4"
+      },
+      {
+        "question": "L'extension '.sh' sur le nom d'un script est obligatoire !",
+        "answer-1": "Faux, c'est pluôt '.zsh' pour utiliser le zsh",
+        "answer-2": "Faux, c'est plutôt '.bash' pour utiliser le bash",
+        "answer-3": "Faux, c'est purement des habitudes et des conventions",
+        "answer-4": "Vrai, sans ça, le script ne marchera pas du tout",
+        "duration": "20",
+        "good-answer": "3"
+      }
+    ]
+  }
