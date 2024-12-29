@@ -16,3 +16,5 @@ https://fork.dev/
 
 https://desktop.github.com/download/
 
+# LINUX Quiz :
+Please use python launcher that I did
