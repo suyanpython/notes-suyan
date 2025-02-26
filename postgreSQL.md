@@ -3,7 +3,6 @@ https://www.postgresql.org/docs/current/functions.html
 
 Data Analysis with PostgreSQL function reference
 ---------------------------------------------------------------------
-CHAPTER 1
 
 String Manipulation Functions
 FUNCTION                                    RESULT
