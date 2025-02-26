@@ -8,13 +8,21 @@ String Manipulation Functions
 FUNCTION                                    RESULT
 ---------------------------------------------------------------------
 lower ( 'PostgreSQL' )                      postgresql
+
 upper ( 'PostgreSQL' )                      POSTGRESQL
+
 left ( 'PostgreSQL', 4 )                    Post
+
 right ( 'PostgreSQL', 3 )                   SQL
+
 substring ( 'PostgreSQL', 5 , 3 )           gre
+
 length ( 'cats and dogs' )                  13
+
 position ( 'a' in 'cats and dogs' )         2
+
 replace ( 'cats and dogs', 'and', '&' )     cats & dogs
+
 trim ( '   cats   ' )                       cats
 
 
