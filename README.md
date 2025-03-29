@@ -1,9 +1,12 @@
 # Spring Notes: 
 Annotations:
-- @SpringBootApplication
-@EnableAutoConfiguration
-@CompnentScan
-@Configuration 
+- @SpringBootApplication(
+scanBasePackages={"path","path2"}
+ )
+
+- @EnableAutoConfiguration
+- @CompnentScan
+- @Configuration 
 
 
 # LINUX Quiz :
