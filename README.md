@@ -6,8 +6,9 @@ scanBasePackages={"path","path2"}
 
 - @EnableAutoConfiguration
 - @CompnentScan
-- @Configuration 
-
+- @Configuration
+- 
+-@Qualifier("className")  # specify the bean id when there are multiple choices possible
 
 # LINUX Quiz :
 Please use python launcher that I did
