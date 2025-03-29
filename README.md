@@ -1,7 +1,12 @@
-Game assets: 
-https://limezu.itch.io/
-https://pipoya.itch.io/
+# Spring Notes: 
+Annotations:
+@EnableAutoConfiguration
+@CompnentScan
+@Configuration 
 
+
+# LINUX Quiz :
+Please use python launcher that I did
 
 # Git questions :
 https://github.com/suyanpython/git-notes-suyan/wiki/Git-questions
@@ -12,10 +17,9 @@ https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow
 # Git UI tools :
 
 https://www.sublimemerge.com/
-
 https://fork.dev/
-
 https://desktop.github.com/download/
 
-# LINUX Quiz :
-Please use python launcher that I did
+# Unity
+https://limezu.itch.io/
+https://pipoya.itch.io/
