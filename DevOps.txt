@@ -1,0 +1,129 @@
+SDP (Software Development Plan)
+ 
+Objective: Mettre en place devOps CI/CD pour l’application en Django
+Temps : 2 semaines
+Resources : AWS EC2 
+Budget : -
+Continually review and adjust the project plan
+Risk matrix This step requires a metric to track and evaluate the project’s performance and quality. Without these metrics and measurements, there won’t be useful data to analyze to make informed decisions and manage the project effectively.
+ 
+Creating and updating project timeline, schedule, and status
+Tracking key performance indicators
+Determining priority for certain solutions and tasks
+Assessing the overall roadmap, project scope, and requirements
+ 
+A comprehensive software development plan requires several key elements. This includes clear project goals and requirements; specific timelines and milestones, suitable roles and responsibilities allocation, and effective budget oversight. In addition, each element needs regular feedback, approval mechanisms, and change management to ensure a well-managed and systematic process.
+
+Project goals and requirements: Clearly identify the purpose, target users, functional and non-functional requirements, and desired outcomes of the end product.
+Timeline and milestones: Create a realistic software development timeline with detailed and precise milestones, providing a project roadmap for everyone to stay on track.
+Roles and responsibilities allocation: Define each team member’s responsibilities and tasks to guarantee efficient accountability and collaboration.
+Budget: Estimate the development costs, resources expenses, and other associated expenses.
+
+pipeline {
+
+    agent any
+
+    environment {
+
+       IMAGE_NAME = 'filrouge_coworking' 
+
+       IMAGE_TAG = 'latest'      
+
+   }
+
+    stages {
+
+        stage('Clone Repository') {
+
+            steps {
+
+                git branch: 'master', url: 'https://github.com/suyanpython/filrouge.git'
+
+            }
+
+        }
+
+        stage('Build and Save Docker Image') {
+
+            steps {
+
+                sh 'docker build -t ${IMAGE_NAME}:${IMAGE_TAG} .'
+
+                sh 'docker export $(docker create ${IMAGE_NAME}:${IMAGE_TAG}) > ${IMAGE_NAME}_${IMAGE_TAG}.tar'
+
+                archiveArtifacts artifacts: "${IMAGE_NAME}_${IMAGE_TAG}.tar", allowEmptyArchive: false
+
+            }
+
+        }
+
+        stage('Create ZIP File') {
+
+            steps {
+
+                sh 'zip -r app.zip .'
+
+            }
+
+        }
+
+        stage('Prepare Markdown Release') {
+
+            steps {
+
+                script {
+
+                    def markdownContent = """
+
+                    ## Release Notes
+
+                    ### Download and Use Docker Image
+
+                    1. Download the Docker image file: [${IMAGE_NAME}_${IMAGE_TAG}.tar](./${IMAGE_NAME}_${IMAGE_TAG}.tar)
+
+                    2. Load the image into Docker:
+
+                       ```bash
+
+                       docker load < ${IMAGE_NAME}_${IMAGE_TAG}.tar
+
+                       ```
+
+                    3. Run the Docker container:
+
+                       ```bash
+
+                       docker run -d --name my-container ${IMAGE_NAME}:${IMAGE_TAG}
+
+                       ```
+
+                    ### Download ZIP File
+
+                    - [Application ZIP File](./app.zip)
+
+                    """
+
+                    writeFile file: 'RELEASE.md', text: markdownContent
+
+                }
+
+            }
+
+        }
+
+    }
+
+    post {
+
+        success {
+
+            archiveArtifacts artifacts: '*.zip, RELEASE.md', allowEmptyArchive: false
+
+        }
+
+    }
+
+}
+
+
+ 
