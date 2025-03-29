@@ -1,6 +1,6 @@
 # Spring Notes: 
 Annotations:
-@SpringBootApplication
+- @SpringBootApplication
 @EnableAutoConfiguration
 @CompnentScan
 @Configuration 
