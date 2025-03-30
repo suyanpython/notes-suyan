@@ -7,6 +7,9 @@ scanBasePackages={"path","path2"}
 - @EnableAutoConfiguration
 - @CompnentScan
 - @Configuration
+
+For "prototype" scoped beans, Spring does not call the destroy method. 
+
 - 
 -@Qualifier("className")  # specify the bean id when there are multiple choices possible
 
