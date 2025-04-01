@@ -1,4 +1,9 @@
 # Spring Notes: 
+
+api placeholder
+https://jsonplaceholder.typicode.com/
+
+
 Annotations:
 - @SpringBootApplication(
 scanBasePackages={"path","path2"}
@@ -10,7 +15,6 @@ scanBasePackages={"path","path2"}
 
 For "prototype" scoped beans, Spring does not call the destroy method. 
 
-- 
 -@Qualifier("className")  # specify the bean id when there are multiple choices possible
 
 ALTER TABLE student_tracker.student AUTO_INCREMENT=3000 
