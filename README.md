@@ -27,6 +27,9 @@ Who Needs It?
 Hibernate (JPA Provider) → Uses reflection to instantiate entity objects when retrieving data from the database.
 Spring Data JPA → When using repositories to fetch entities, it needs to create instances dynamically.
 
+Docs: 
+https://github.com/darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners/blob/main/11-appendix/course-links.md
+
 # LINUX Quiz :
 Please use python launcher that I did
 
