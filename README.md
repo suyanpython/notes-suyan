@@ -9,6 +9,15 @@ Annotations:
 scanBasePackages={"path","path2"}
  )
 
+Beans: 
+Service Layer	@Service	Business logic
+Repository Layer	@Repository	Database access
+Controller Layer	@Controller	Web requests
+Configuration Classes	@Bean	External libraries, manual beans
+Utility Classes	@Component	Helper methods
+Security	@Bean	Spring Security config
+Aspect-Oriented Programming	@Aspect	Logging, monitoring
+
 - @EnableAutoConfiguration
 - @CompnentScan
 - @Configuration
