@@ -3,6 +3,9 @@
 api placeholder
 https://jsonplaceholder.typicode.com/
 
+Powershell fast change jdk version for maven
+ $env:JAVA_HOME = "C:\Program Files\Java\jdk-24"
+ $env:PATH = "$env:JAVA_HOME\bin;" + $env:PATH
 
 Annotations:
 - @SpringBootApplication(
