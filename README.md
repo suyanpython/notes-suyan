@@ -55,6 +55,8 @@ npm i g @nestjs/cli
 nest new XXX
 npm run start
 (localhost:3000)
+nest generate library common
+
 
 
 # LINUX Quiz :
