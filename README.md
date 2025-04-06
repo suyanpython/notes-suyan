@@ -79,6 +79,7 @@ npm i @nestjs/config
 
 nest generate module XXX -p common   (here we generate database and config)
 
+npm start:dev (enter to the watching mode)
 
 # LINUX Quiz :
 Please use python launcher that I did
