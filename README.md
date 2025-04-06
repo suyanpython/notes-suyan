@@ -75,6 +75,9 @@ nest generate library common
 
 npm i @nestjs/mongoose mongoose 
 
+npm i @nestjs/config
+
+nest generate module XXX -p common   (here we generate database and config)
 
 
 # LINUX Quiz :
