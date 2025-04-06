@@ -50,6 +50,13 @@ Final preventions
 Docs: 
 https://github.com/darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners/blob/main/11-appendix/course-links.md
 
+# Nest :
+npm i g @nestjs/cli
+nest new XXX
+npm run start
+(localhost:3000)
+
+
 # LINUX Quiz :
 Please use python launcher that I did
 
