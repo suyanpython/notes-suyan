@@ -1,4 +1,4 @@
-# Spring Notes: 
+![image](https://github.com/user-attachments/assets/679a4190-81b3-4c85-8c73-8a2552236165)# Spring Notes: 
 
 api placeholder
 https://jsonplaceholder.typicode.com/
@@ -13,12 +13,19 @@ scanBasePackages={"path","path2"}
  )
 
 Beans: 
+
 Service Layer	@Service	Business logic
+
 Repository Layer	@Repository	Database access
+
 Controller Layer	@Controller	Web requests
+
 Configuration Classes	@Bean	External libraries, manual beans
+
 Utility Classes	@Component	Helper methods
+
 Security	@Bean	Spring Security config
+
 Aspect-Oriented Programming	@Aspect	Logging, monitoring
 
 - @EnableAutoConfiguration
@@ -39,12 +46,17 @@ Spring Data JPA → When using repositories to fetch entities, it needs to creat
 
 
 ✔ JPA for API or switch DB providers easily (switch ORM providers easily), use JPA
+
 ✔ Hibernate Framework (caching, batch processing, NoSQL support), use Hibernate
 
 Final preventions
+
 ✅ Defining constants (final int MAX_SPEED = 100;)
+
 ✅ Preventing method overriding (public final void start())
+
 ✅ Preventing class inheritance (public final class Car {})
+
 ✅ Ensuring immutable dependencies in Spring Boot (private final Engine engine;)
 
 Docs: 
@@ -60,6 +72,8 @@ npm run start
 (localhost:3000)
 
 nest generate library common
+
+npm i @nestjs/mongoose mongoose 
 
 
 
