@@ -52,9 +52,13 @@ https://github.com/darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners/
 
 # Nest :
 npm i g @nestjs/cli
+
 nest new XXX
+
 npm run start
+
 (localhost:3000)
+
 nest generate library common
 
 
