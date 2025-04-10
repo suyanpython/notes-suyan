@@ -2,6 +2,8 @@
 
 api placeholder
 https://jsonplaceholder.typicode.com/
+api star wars: 
+https://swapi.dev/
 
 Powershell fast change jdk version for maven
  $env:JAVA_HOME = "C:\Program Files\Java\jdk-24"
