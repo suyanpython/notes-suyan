@@ -83,7 +83,7 @@ nest generate module XXX -p common   (here we generate database and config)
 
 npm start:dev (enter to the watching mode)
 
-#React :
+# React :
 Try Upgrading Dependencies
 
 npx npm-check-updates -u
