@@ -83,6 +83,16 @@ nest generate module XXX -p common   (here we generate database and config)
 
 npm start:dev (enter to the watching mode)
 
+#React :
+Try Upgrading Dependencies
+
+npx npm-check-updates -u
+
+npm install
+
+npm ls request
+
+
 # LINUX Quiz :
 Please use python launcher that I did
 
