@@ -90,6 +90,15 @@ npm install
 
 npm ls request
 
+# Images in Emails :
+
+To avoid issues with external images being blocked, you can embed the image directly into the email using Base64 encoding. This encodes the image as a string of text and embeds it within the email itself, so there’s no need to load it from an external server.
+
+Example of embedding an image using Base64:
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUA..." alt="Embedded Image">
+
+Encourage Recipients to "Allow Images":include a view in browser link 
 
 # LINUX Quiz :
 Please use python launcher that I did
