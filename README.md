@@ -65,7 +65,7 @@ https://github.com/darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners/
 # Nest :
 npm i g @nestjs/cli
 
-nest new XXX
+nest new 
 
 npm run start:dev
 
@@ -92,7 +92,7 @@ npm run start:dev
     │ sub-app       │ app         │ Generate a new application within a monorepo 
 
     
-nest g library XXX
+ nest g co XXX --no-spec
 
 npm i @nestjs/mongoose mongoose 
 
