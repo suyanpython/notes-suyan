@@ -67,7 +67,7 @@ npm i g @nestjs/cli
 
 nest new XXX
 
-npm run start
+npm run start:dev
 
 
     │ name          │ alias       │ description                                  │
