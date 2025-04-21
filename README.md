@@ -130,15 +130,24 @@ https://github.com/suyanpython/git-notes-suyan/wiki/Git-questions
 # Github actions:
 https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows
 
-# Git UI tools :
+# Quick HTTP server
+npm install -g http-server
+http-server
 
+python -m http.server
+
+# Git UI tools :
 https://www.sublimemerge.com/
 https://fork.dev/
 https://desktop.github.com/download/
 
 # Unity
 https://limezu.itch.io/
+
 https://pipoya.itch.io/
+
 https://sketchfab.com/3d-models/the-hallwyl-museum-1st-floor-combined-f74eefe9f1cd4a2795a689451e723ee9
+
 https://clara.io/library
+
 https://www.turbosquid.com/fr/
