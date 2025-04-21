@@ -139,3 +139,6 @@ https://desktop.github.com/download/
 # Unity
 https://limezu.itch.io/
 https://pipoya.itch.io/
+https://sketchfab.com/3d-models/the-hallwyl-museum-1st-floor-combined-f74eefe9f1cd4a2795a689451e723ee9
+https://clara.io/library
+https://www.turbosquid.com/fr/
