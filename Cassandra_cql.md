@@ -13,3 +13,7 @@ MongoDB: Content management, catalogs, user profiles, real-time analytics, appli
 Cassandra: Logging, time-series data, metrics, high-throughput IoT, apps needing write-heavy performance and uptime.
 
 
+Cassandra:
+docker pull cassandra:latest
+docker run -d --name thename cassandra:latest
+docker exec -it thename cqlsh
