@@ -5,6 +5,19 @@
 - gcloud config get-value project
   
 - gcloud compute instances create gcelab2 --machine-type e2-medium --zone $ZONE
+-   gcloud compute instances create www3 \
+    --zone=us-central1-c  \
+    --tags=network-lb-tag \
+    --machine-type=e2-small \
+    --image-family=debian-11 \
+    --image-project=debian-cloud \
+    --metadata=startup-script='#!/bin/bash
+      apt-get update
+      apt-get install apache2 -y
+      service apache2 restart
+      echo "
+<h3>Web Server: www3</h3>" | tee /var/www/html/index.html'
+  
 - gcloud container clusters create --machine-type=e2-medium --zone=us-east5-b lab-cluster
 - gcloud container clusters get-credentials lab-cluster
 - kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0
@@ -22,12 +35,33 @@
 - gcloud compute ssh gcelab2 --zone $ZONE
 - gcloud compute instances add-tags gcelab2 --tags http-server,https-server
 - gcloud compute firewall-rules create default-allow-http --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:80 --source-ranges=0.0.0.0/0 --target-tags=http-server
+- 
+- gcloud compute firewall-rules create www-firewall-network-lb --target-tags network-lb-tag --allow tcp:80
+- gcloud compute addresses create network-lb-ip-1 --region us-central1
+- gcloud compute http-health-checks create basic-check
+- 
 
 - gcloud logging logs list --filter="compute"
 - gcloud logging read "resource.type=gce_instance AND labels.instance_name='gcelab2'" --limit 5
 
 
 ```   
+gcloud compute forwarding-rules describe www-rule --region us-central1
+IPAddress: 34.31.93.13
+IPProtocol: TCP
+creationTimestamp: '2025-04-25T07:54:29.989-07:00'
+description: ''
+fingerprint: 5TwZHYzzb2Y=
+id: '7830275268335246538'
+kind: compute#forwardingRule
+labelFingerprint: 42WmSpB8rSM=
+loadBalancingScheme: EXTERNAL
+name: www-rule
+networkTier: PREMIUM
+portRange: 80-80
+region: https://www.googleapis.com/compute/v1/projects/qwiklabs-gcp-02-170058fdaa94/regions/us-central1
+selfLink: https://www.googleapis.com/compute/v1/projects/qwiklabs-gcp-02-170058fdaa94/regions/us-central1/forwardingRules/www-rule
+target: https://www.googleapis.com/compute/v1/projects/qwiklabs-gcp-02-170058fdaa94/regions/us-central1/targetPools/www-pool
 
 $ gcloud compute firewall-rules list --format=json
 [
