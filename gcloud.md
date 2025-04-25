@@ -1,9 +1,17 @@
 - gcloud auth list
 - gcloud config list project
+- gcloud config set compute/region us-east5
 - gcloud config set compute/zone ZONE
 - gcloud config get-value project
   
 - gcloud compute instances create gcelab2 --machine-type e2-medium --zone $ZONE
+- gcloud container clusters create --machine-type=e2-medium --zone=us-east5-b lab-cluster
+- gcloud container clusters get-credentials lab-cluster
+- kubectl create deployment hello-server --image=gcr.io/google-samples/hello-app:1.0
+- kubectl expose deployment hello-server --type=LoadBalancer --port 8080
+- kubectl get service
+- curl http://[EXTERNAL-IP]:8080
+  
 - gcloud -h
 - gcloud compute instances list --filter="name=('gcelab2')"
 - gcloud compute firewall-rules list --filter="NETWORK:'default' AND ALLOW:'icmp'"
