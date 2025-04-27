@@ -1,3 +1,16 @@
+# Create the target Docker repository
+
+- gcloud auth configure-docker  us-central1-docker.pkg.dev
+- gcloud artifacts repositories create my-repository --repository-format=docker --location="us-central1" --description="Docker repository"
+- docker build -t us-central1-docker.pkg.dev/"PROJECT_ID"/my-repository/node-app:0.2 .
+- docker push us-central1-docker.pkg.dev/"PROJECT_ID"/my-repository/node-app:0.2
+- docker stop $(docker ps -q)
+- docker rm $(docker ps -aq)
+- docker rmi -f $(docker images -aq) # remove remaining images
+- docker run -p 4000:80 -d  us-central1-docker.pkg.dev/"PROJECT_ID"/my-repository/node-app:0.2
+
+
+
 - gcloud auth list
 - gcloud config list project
 - gcloud config set compute/region us-east5
