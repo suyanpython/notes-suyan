@@ -1,3 +1,80 @@
+# K8s's struture  
+├── cleanup.sh
+├── deployments
+│   ├── auth.yaml
+│   ├── frontend.yaml
+│   ├── hello-canary.yaml
+│   ├── hello-green.yaml
+│   └── hello.yaml
+├── nginx
+│   ├── frontend.conf
+│   └── proxy.conf
+├── pods
+│   ├── healthy-monolith.yaml
+│   ├── monolith.yaml
+│   └── secure-monolith.yaml
+├── services
+│   ├── auth.yaml
+│   ├── frontend.yaml
+│   ├── hello-blue.yaml
+│   ├── hello-green.yaml
+│   ├── hello.yaml
+│   └── monolith.yaml
+└── tls
+    ├── ca-key.pem
+    ├── ca.pem
+    ├── cert.pem
+    └── key.pem
+
+# shortcuts 
+- kube ctl get po
+
+- kubectl get deploy → for deployments
+
+- kubectl get svc → for services
+
+- kubectl get ns → for namespaces
+
+# Create a pod 
+    - kubectl create deployment nginx --image=nginx:1.10.0 # create pod with deployment of image 
+    - kubectl create -f pods/monolith.yaml    # create pod from yml
+    - kubectl get pods
+    - kubectl describe pods monolith
+    
+# Expose as ALB  # get external IP 
+    - kubectl expose deployment nginx --port 80 --type LoadBalancer
+    - kubectl get services
+  
+# Check locally # & detached mode
+  - kubectl port-forward monolith 10080:80 &
+
+  - TOKEN=$(curl http://127.0.0.1:10080/login -u user|jq -r '.token')
+  - curl -H "Authorization: Bearer $TOKEN" http://127.0.0.1:10080/secure
+
+# Check history # -f for tream
+- kubectl logs monolith
+
+# it exec of the pod 
+- kubectl exec monolith --stdin --tty -c monolith -- /bin/sh
+- printenv, echo $PATH, touch, mkdir, vi, hostname -i, ip, ls -R
+
+# https 
+- kubectl create secret generic tls-certs --from-file tls/
+- kubectl create configmap nginx-proxy-conf --from-file nginx/proxy.conf
+- kubectl create -f pods/secure-monolith.yaml
+- gcloud compute firewall-rules create allow-monolith-nodeport --allow=tcp:31000
+- gcloud compute instances list
+
+# get ALB IP
+- kubectl get services monolith
+- kubectl describe services monolith
+- kubectl describe services monolith | grep Endpoints 
+  
+# add label and search by label 
+- kubectl label pods secure-monolith 'secure=enabled'
+- kubectl get pods secure-monolith --show-labels
+- kubectl get pods -l "app=monolith,secure=enabled"
+
 # Create the target Docker repository
 
 - gcloud auth configure-docker  us-central1-docker.pkg.dev
@@ -9,6 +86,10 @@
 - docker rmi -f $(docker images -aq) # remove remaining images
 - docker run -p 4000:80 -d  us-central1-docker.pkg.dev/"PROJECT_ID"/my-repository/node-app:0.2
 
+# Deploy 
+- kubectl create configmap nginx-frontend-conf --from-file=nginx/frontend.conf
+- kubectl create -f deployments/frontend.yaml
+- kubectl create -f services/frontend.yaml
 
 
 - gcloud auth list
