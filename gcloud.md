@@ -78,6 +78,7 @@
 # Create the target Docker repository
 
 - gcloud auth configure-docker  us-central1-docker.pkg.dev
+-  check with: cat ~/.docker/config.json
 - gcloud artifacts repositories create my-repository --repository-format=docker --location="us-central1" --description="Docker repository"
 - docker build -t us-central1-docker.pkg.dev/"PROJECT_ID"/my-repository/node-app:0.2 .
 - docker push us-central1-docker.pkg.dev/"PROJECT_ID"/my-repository/node-app:0.2
