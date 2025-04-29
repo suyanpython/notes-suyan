@@ -27,7 +27,10 @@ In a standalone component:
   <p>Comments will appear once you scroll here</p>
 } @loading {
   <p>Loading comments...</p>
-}
+} @error {
+        <p>Failed to load comments</p>
+ }
+
 ```
 
 # Image optimization 
@@ -43,7 +46,17 @@ In a standalone component:
 ```
 // app.routes
 import {Routes} from '@angular/router';
-export const routes: Routes = [];
+export const routes: Routes = [ {
+    path: '',
+    title: 'App Home Page',
+    component: HomeComponent,
+  },
+  {
+    path: 'user',
+    title: 'App User Page',
+    component: UserComponent,
+  },
+];
 
 // app.config
 
@@ -52,4 +65,6 @@ import {routes} from './app.routes';
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes)],
 };
+
+// if not reload entire page, import RouterLink and change href into RouterLink in html
 ```
