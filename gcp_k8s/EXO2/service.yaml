@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: valkyrie-dev
+  name: valkyrie-dev
+spec:
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: valkyrie-app
+    role: frontend-backend
+    env: dev
+  sessionAffinity: None
