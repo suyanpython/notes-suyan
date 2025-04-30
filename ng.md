@@ -68,3 +68,8 @@ export const appConfig: ApplicationConfig = {
 
 // if not reload entire page, import RouterLink and change href into RouterLink in html
 ```
+
+# Syntactic sugar 
+```
+this.theme.update(currentValue => currentValue === 'light' ? 'dark' : 'light');
+```
