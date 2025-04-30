@@ -73,3 +73,4 @@ export const appConfig: ApplicationConfig = {
 ```
 this.theme.update(currentValue => currentValue === 'light' ? 'dark' : 'light');
 ```
+
