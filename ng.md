@@ -91,3 +91,58 @@ housingLocation?.photo
 - npm install -g json-server
 - json-server --watch db.json
 
+## DOM Event Bindings in Angular
+
+### Mouse Events
+- `(click)="..."`
+- `(dblclick)="..."`
+- `(mousedown)="..."`
+- `(mouseup)="..."`
+- `(mouseenter)="..."`
+- `(mouseleave)="..."`
+- `(mousemove)="..."`
+- `(contextmenu)="..."`
+
+### Keyboard Events
+- `(keydown)="..."`
+- `(keyup)="..."`
+- `(keypress)="..."`
+
+### Form/Input Events
+- `(input)="..."`
+- `(change)="..."`
+- `(focus)="..."`
+- `(blur)="..."`
+- `(submit)="..."`
+
+### Clipboard Events
+- `(copy)="..."`
+- `(cut)="..."`
+- `(paste)="..."`
+
+### Drag & Drop Events
+- `(drag)="..."`
+- `(dragstart)="..."`
+- `(dragend)="..."`
+- `(dragenter)="..."`
+- `(dragleave)="..."`
+- `(dragover)="..."`
+- `(drop)="..."`
+
+### Touch Events
+- `(touchstart)="..."`
+- `(touchend)="..."`
+- `(touchmove)="..."`
+
+### Media Events
+- `(play)="..."`
+- `(pause)="..."`
+- `(ended)="..."`
+- `(timeupdate)="..."`
+
+### Window Events
+- `(window:resize)="..."`
+- `(window:scroll)="..."`
+
+### Custom Events
+- `(myCustomEvent)="..."`
