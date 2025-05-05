@@ -69,10 +69,21 @@ export const appConfig: ApplicationConfig = {
 };
 
 // if not reload entire page, import RouterLink and change href into RouterLink in html
+add import { RouterModule } from '@angular/router';
+
+//globally
+replace:
+<app-home></app-home>
+into:
+<router-outlet></router-outlet>
 ```
 
 # Syntactic sugar 
 ```
 this.theme.update(currentValue => currentValue === 'light' ? 'dark' : 'light');
+
+//in Templates, If exists, use its photo property for the image src; otherwise, don’t throw an error
+housingLocation?.photo
+
 ```
 
