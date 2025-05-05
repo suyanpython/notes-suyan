@@ -86,4 +86,8 @@ this.theme.update(currentValue => currentValue === 'light' ? 'dark' : 'light');
 housingLocation?.photo
 
 ```
+# Json DB for local testing 
+
+- npm install -g json-server
+- json-server --watch db.json
 
