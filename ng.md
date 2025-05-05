@@ -58,7 +58,9 @@ export const routes: Routes = [ {
   },
 ];
 
-// app.config
+
+// main.ts is the correct place for the root routing configuration.
+// app.config.ts should be used for other application-wide configuration.
 
 import {provideRouter} from '@angular/router';
 import {routes} from './app.routes';
