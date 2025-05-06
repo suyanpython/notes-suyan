@@ -93,6 +93,21 @@ housingLocation?.photo
 
 # npm install	VS npm ci
 
+# Best pratices : 
+```
+// use variable for base url
+const API_BASE_URL = process.env.API_BASE_URL;
+fetch(`${API_BASE_URL}/posts`);
+
+//clean up resources
+useEffect(() => {
+  window.addEventListener('resize', handleResize);
+  return () => window.removeEventListener('resize', handleResize);
+}, []);
+
+```
+
+
 ## DOM Event Bindings in Angular
 
 ### Mouse Events
