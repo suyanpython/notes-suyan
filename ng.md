@@ -91,6 +91,8 @@ housingLocation?.photo
 - npm install -g json-server
 - json-server --watch db.json
 
+# npm install	VS npm ci
+
 ## DOM Event Bindings in Angular
 
 ### Mouse Events
