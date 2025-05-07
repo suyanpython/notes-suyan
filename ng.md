@@ -44,7 +44,7 @@ In a standalone component:
 - edit app.config
 
 ```
-// app.routes
+// app.routes.ts
 import {Routes} from '@angular/router';
 export const routes: Routes = [ {
     path: '',
@@ -59,8 +59,9 @@ export const routes: Routes = [ {
 ];
 
 
-// main.ts is the correct place for the root routing configuration.
-// app.config.ts should be used for other application-wide configuration.
+// main.ts inline way of adding routes
+// main.config.ts or app.config.ts  to be imported in main.ts, you can add other configs such as Zone (best practice)
+// or you name it environment.ts  for build-time config
 
 import {provideRouter} from '@angular/router';
 import {routes} from './app.routes';
@@ -106,6 +107,10 @@ useEffect(() => {
 }, []);
 
 ```
+# Standalone 
+- ng new my-app --standalone
+- bootstrapApplication(...) in main.ts
+
 
 
 ## DOM Event Bindings in Angular
