@@ -1,4 +1,5 @@
 # K8s's struture  
+```
 ├── cleanup.sh
 ├── deployments
 │   ├── auth.yaml
@@ -25,6 +26,7 @@
     ├── ca.pem
     ├── cert.pem
     └── key.pem
+```
 
 # shortcuts 
 - kube ctl get po
