@@ -7,3 +7,16 @@ docker-compose up -d
 - docker exec -it kafka kafka-console-producer --topic my-docker-test-topic --bootstrap-server localhost:9092
 - docker exec -it kafka kafka-console-consumer --topic my-docker-test-topic --from-beginning --bootstrap-server localhost:9092
 
+Topic list: 
+- docker exec -it kafka kafka-topics --list --bootstrap-server localhost:9092
+- docker exec -it kafka kafka-consumer-groups --list --bootstrap-server localhost:9092
+
+Describe topic: 
+- docker exec -it kafka kafka-topics --describe --topic my-docker-test-topic --bootstrap-server localhost:9092
+
+
+
+docker exec -it <your_connect_container_name> connect-cli --list-connectors -u <connect_rest_url>
+docker exec -it <your_connect_container_name> connect-cli --describe-connector <connector_name> -u <connect_rest_url>
+docker exec -it <your_connect_container_name> connect-cli --create-connector <connector_config.json> -u <connect_rest_url>
+# ... and other commands for managing tasks, pausing, resuming, etc.
