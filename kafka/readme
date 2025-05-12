@@ -1,0 +1,9 @@
+
+docker-compose up -d
+# Or if you have a newer Docker version:
+# docker compose up -d
+
+- docker exec -it kafka kafka-topics --create --topic my-docker-test-topic --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1
+- docker exec -it kafka kafka-console-producer --topic my-docker-test-topic --bootstrap-server localhost:9092
+- docker exec -it kafka kafka-console-consumer --topic my-docker-test-topic --from-beginning --bootstrap-server localhost:9092
+
