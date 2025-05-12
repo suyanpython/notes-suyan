@@ -17,3 +17,40 @@ services:
       - KAFKA_CFG_INTER_BROKER_LISTENER_NAME=PLAINTEXT
     volumes:
       - /kafka/docker-compose/volumes/server-1:/bitnami/kafka
+
+#simplier version with zookeeper
+
+version: '3.7' # Or a version compatible with your Docker install
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest # Or specify a version like 7.6.1
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+
+  kafka:
+    image: confluentinc/cp-kafka:latest # Or specify a version like 7.6.1
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      # Exposes Kafka broker outside Docker on port 9092
+      - "9092:9092"
+      # For internal Docker communication if needed (e.g. Kafka Connect)
+      # - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181 # Connects to Zookeeper service defined above
+      # IMPORTANT: Defines how clients *outside* Docker can connect to the broker
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
+      # Listener used for inter-broker communication or internal Docker communication
+      # KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,INTERNAL:PLAINTEXT
+      # KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092,INTERNAL://0.0.0.0:29092
+      # KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL # Tells brokers how to find each other
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1 # Fine for single-node setup
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      # You might need other KAFKA_* environment variables for more advanced configs
