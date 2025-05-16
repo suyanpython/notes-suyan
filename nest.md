@@ -37,3 +37,7 @@ npm i @nestjs/config
 nest generate module XXX -p common   (here we generate database and config)
 
 npm start:dev (enter to the watching mode)
+
+
+npm install class-validator class-transformer
+
