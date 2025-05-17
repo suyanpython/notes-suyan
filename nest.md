@@ -40,4 +40,6 @@ npm start:dev (enter to the watching mode)
 
 
 npm install class-validator class-transformer
+npm install @nestjs/mapped-types
+
 
