@@ -172,7 +172,10 @@ useEffect(() => {
 # Tailwind 
 - npm install -D tailwindcss postcss autoprefixer
 - npx tailwindcss init -p
+  
 - tailwind.config.js
+
+  
   ```
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -185,7 +188,10 @@ module.exports = {
   plugins: [],
 } 
 ```
+
+
 - postcss.config.js
+
 ```
 module.exports = {
   plugins: {
@@ -194,13 +200,19 @@ module.exports = {
   },
 }
 ```
+
+
 - styles.css
+
 ```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
+
+
 - package.json
+
 ```
 "scripts": {
   "build:tailwind": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
@@ -208,5 +220,6 @@ module.exports = {
   // ... other scripts
 }
 ```
--Include the generated CSS in your angular.json:
+
+- Include the generated CSS in your angular.json:
 Make sure the output CSS file (./dist/styles.css or ./dist/styles.min.css) is included in the styles array of your build configuration.
