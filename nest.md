@@ -45,5 +45,6 @@ npm install @nestjs/mapped-types
 Extension for .http file: 
 REST Client extension
 
+npm i --save @nestjs/config
 
 
