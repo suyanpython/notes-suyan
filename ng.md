@@ -168,3 +168,44 @@ useEffect(() => {
 
 ### Custom Events
 - `(myCustomEvent)="..."`
+
+# Tailwind 
+- npm install -D tailwindcss postcss autoprefixer
+- npx tailwindcss init -p
+- tailwind.config.js
+  ```/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,ts}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+} 
+```
+- postcss.config.js
+```
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+```
+- styles.css
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+- package.json
+```
+"scripts": {
+  "build:tailwind": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --watch",
+  "build:prod:tailwind": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.min.css --minify",
+  // ... other scripts
+}
+```
+-Include the generated CSS in your angular.json:
+Make sure the output CSS file (./dist/styles.css or ./dist/styles.min.css) is included in the styles array of your build configuration.
