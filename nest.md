@@ -46,6 +46,7 @@ Extension for .http file:
 REST Client extension
 
 npm i --save @nestjs/config
+npm install --save joi
 
 Things to take care of :
 1. generics <T> , to reduce possible errors
