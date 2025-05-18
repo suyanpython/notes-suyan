@@ -173,7 +173,8 @@ useEffect(() => {
 - npm install -D tailwindcss postcss autoprefixer
 - npx tailwindcss init -p
 - tailwind.config.js
-  ```/** @type {import('tailwindcss').Config} */
+  ```
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./src/**/*.{html,ts}",
