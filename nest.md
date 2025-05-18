@@ -47,4 +47,9 @@ REST Client extension
 
 npm i --save @nestjs/config
 
+Things to take care of :
+1. generics <T> , to reduce possible errors
+2.  ?. optional chaining operator, it can undefined without causing a runtime error.
+   ex: const prefix = this.configService.get<ConfigType>('app')?.messagePrefix;
+
 
