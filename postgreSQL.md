@@ -318,4 +318,8 @@ SUM(sales) OVER
 
 
 
+TRUNCATE TABLE public.task RESTART IDENTITY; -- Truncate child table first
+
+TRUNCATE TABLE public.user RESTART IDENTITY;  -- Then truncate parent table
+
 
