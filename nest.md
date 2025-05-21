@@ -48,6 +48,24 @@ REST Client extension
 npm i --save @nestjs/config
 npm install --save joi
 
+
+# repository 
+@InjectRepository(Task) // This decorator tells NestJS to inject the Repository for the Task entity
+private tasksRepository: Repository<Task>, // Declares a private property to hold the injected repository
+
+# Built-in Methods
+
+- tasksRepository.findOne({ where: { id } })
+- tasksRepository.findOneBy({ id });
+- tasksRepository.find() // find all 
+- tasksRepository.save(Dto entity | entity[])
+- create(plainObject): Creates a new entity instance (but doesn't save it to the DB yet).
+- tasksRepository.delete(task)
+- update(criteria, partialEntity)
+- merge(entity, plainObject): Merges a plain object into an entity.
+- count(options): Counts entities.
+
+
 Things to take care of :
 1. generics <T> , to reduce possible errors
 2.  ?. optional chaining operator, it can undefined without causing a runtime error.
