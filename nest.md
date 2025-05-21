@@ -59,7 +59,7 @@ private tasksRepository: Repository<Task>, // Declares a private property to hol
 - tasksRepository.findOneBy({ id });
 - tasksRepository.find() // find all 
 - tasksRepository.save(Dto entity | entity[])
-- create(plainObject): Creates a new entity instance (but doesn't save it to the DB yet).
+- taskLabelsRepository.create({ name: labelDto.name })
 - tasksRepository.delete(task)
 - update(criteria, partialEntity)
 - merge(entity, plainObject): Merges a plain object into an entity.
