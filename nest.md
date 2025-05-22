@@ -60,7 +60,7 @@ private tasksRepository: Repository<Task>, // Declares a private property to hol
 - tasksRepository.find() // find all 
 - tasksRepository.save(Dto entity | entity[])
 - taskLabelsRepository.create({ name: labelDto.name })
-- tasksRepository.delete(task)
+- tasksRepository.delete(task.id) = tasksRepository.delete(task)  
 - update(criteria, partialEntity)
 - merge(entity, plainObject): Merges a plain object into an entity.
 - count(options): Counts entities.
