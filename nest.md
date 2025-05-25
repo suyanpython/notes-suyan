@@ -108,7 +108,7 @@ TypeORM FindOperators: (for complex query)
 - IsNull: where: { description: IsNull() }
 - Raw: For when you need to write raw SQL within the where clause (use with caution to avoid SQL injection): where: { createdAt: Raw(alias =>${alias} > NOW() - INTERVAL '7 days') }
 
-#Query Builder (SelectQueryBuilder, InsertQueryBuilder, UpdateQueryBuilder, DeleteQueryBuilder)
+# Query Builder (SelectQueryBuilder, InsertQueryBuilder, UpdateQueryBuilder, DeleteQueryBuilder)
 
 When you need fine-grained control over joins, subqueries, complex WHERE conditions, group by, having, etc.
 
